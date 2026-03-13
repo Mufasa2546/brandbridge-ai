@@ -9,6 +9,7 @@ const cors = require('cors');
 const OpenAI = require('openai');
 
 const app = express();
+app.use(express.static(__dirname));
 const PORT = process.env.PORT || 3001;
 
 // ── OpenAI client (uses OPENAI_API_KEY env var automatically) ──────────────
